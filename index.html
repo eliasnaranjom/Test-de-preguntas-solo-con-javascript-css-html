@@ -1,0 +1,404 @@
+<!-- deivisjoro.000webhostapp.com -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">Test</div>
+	</header>
+	<nav id="mostrarNombre">
+		<div>Nombre: <span id="nombreEst">Nombre</span></div>
+	</nav>
+	<main>
+		<div id="nombre">
+			<h2>Ingresa tu nombre para iniciar el test</h2>
+			<input id="nuevoEst" type="text" placeholder="Nombres y Apellidos">
+			<button onclick="iniciaTest()">Iniciar</button>
+		</div>
+		<div id="cuestionario">
+
+			<div id="panelpregunta">
+				<ul>
+					<a href="#" id="preNav1">
+						<li>1</li>
+					</a>
+					<a href="#" id="preNav2">
+						<li>2</li>
+					</a>
+					<a href="#" id="preNav3">
+						<li>3</li>
+					</a>
+					<a href="#" id="preNav4">
+						<li>4</li>
+					</a>
+					<a href="#" id="preNav5">
+						<li>5</li>
+					</a>
+					<a href="#" id="preNav6">
+						<li>6</li>
+					</a>
+					<a href="#" id="preNav7">
+						<li>7</li>
+					</a>
+					<a href="#" id="preNav8">
+						<li>8</li>
+					</a>
+					<a href="#" id="preNav9">
+						<li>9</li>
+					</a>
+				</ul>
+			</div>
+
+			<div id="Progress_Status"> 
+				<div id="myprogressBar"></div> 
+			</div>
+
+			<div class="pregunta" id="intro">
+				<h1>Bienvenido</h1>
+				<br>
+				<h4>En este test veras preguntas de seleccion multiple con unica respuesta, consta de 9 preguntas sobre programacion basica, si te sientes preparado ¡EMPECEMOS!</h4>
+				<button class="btnIntro" id="sig1" onclick="primerapregunta()">¡Empezar!</button>
+			</div>
+
+			<div class="pregunta" id="pregunta1" style="padding-bottom: 80px;">
+				<h1>Pregunta 1 de 9</h1>
+				<br>
+				<h2>Qué es la programación:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta1" id="pregunta1-1" value="1">
+							<label for="pregunta1-1">Lista de acciones que realiza el computador.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta1" id="pregunta1-2" value="2">
+							<label for="pregunta1-2">Proceso por el cual se diseña y codifica programas.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta1" id="pregunta1-3" value="3">
+							<label for="pregunta1-3">Crear un plan de trabajo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta1" id="pregunta1-4" value="4">
+							<label for="pregunta1-4">Secuencia de intrucciones realizadas por el computador en un problema.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig1" onclick="sig1()">Siguiente</button>
+			</div>
+
+			<div class="pregunta" id="pregunta2">
+				<h1>Pregunta 2 de 9</h1>
+				<br>
+				<h2>La frase que resume de manera más exacta el concepto de algoritmo es:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta2" id="pregunta2-1" value="1">
+							<label for="pregunta2-1">Serie de problemas a solucionar.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta2" id="pregunta2-2" value="2">
+							<label for="pregunta2-2">Serie de acciones para solucionar un problema.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta2" id="pregunta2-3" value="3">
+							<label for="pregunta2-3">Serie de acciones para armar un "plan".</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta2" id="pregunta2-4" value="4">
+							<label for="pregunta2-4">Proceso de retomar datos para solucionar un problema.</label>
+						</li>
+					</form>
+				</ol>
+
+				<button class="sig" id="sig2" onclick="sig2()">Siguiente</button>
+				<button class="ant" id="ant2" onclick="ant2()">Anterior</button>
+			</div>
+
+			<div class="pregunta" id="pregunta3">
+				<h1>Pregunta 3 de 9</h1>
+				<br>
+				<h2>Un algoritmo tiene 3 partes que son:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta3" id="pregunta3-1" value="1">
+							<label for="pregunta3-1">Información, programación y salida.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta3" id="pregunta3-2" value="2">
+							<label for="pregunta3-2">Ingredientes, preparación y salida.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta3" id="pregunta3-3" value="3">
+							<label for="pregunta3-3">Entrada, proceso y salida.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta3" id="pregunta3-4" value="4">
+							<label for="pregunta3-4">Lógico, finito y preciso.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig3" onclick="sig3()">Siguiente</button>
+				<button class="ant" id="ant3" onclick="ant3()">Anterior</button>
+			</div>
+
+			<div class="pregunta" id="pregunta4">
+				<h1>Pregunta 4 de 9</h1>
+				<br>
+				<h2>Que nos permite realizar la parte del algoritmo llamada "salida":</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta4" id="pregunta4-1" value="1">
+							<label for="pregunta4-1">Mostrar los datos necesarios para resolver el problema.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta4" id="pregunta4-2" value="2">
+							<label for="pregunta4-2">La operación que debemos realizar.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta4" id="pregunta4-3" value="3">
+							<label for="pregunta4-3">Mostrar los resultados.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta4" id="pregunta4-4" value="4">
+							<label for="pregunta4-4">Todas son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig4" onclick="sig4()">Siguiente</button>
+				<button class="ant" id="ant4" onclick="ant4()">Anterior</button>
+			</div>
+
+			<div class="pregunta" id="pregunta5">
+				<h1>Pregunta 5 de 9</h1>
+				<br>
+				<h2>Cuáles son las formas de representar un algoritmo:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta5" id="pregunta5-1" value="1">
+							<label for="pregunta5-1">Lenguaje natural, diagrama de flujo y pseudocódigo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta5" id="pregunta5-2" value="2">
+							<label for="pregunta5-2">Lenguaje natural y pseudocódigo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta5" id="pregunta5-3" value="3">
+							<label for="pregunta5-3">Lenguaje natural, lenguaje finito.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta5" id="pregunta5-4" value="4">
+							<label for="pregunta5-4">Todas son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig5" onclick="sig5()">Siguiente</button>
+				<button class="ant" id="ant5" onclick="ant5()">Anterior</button>
+			</div>
+			<div class="pregunta" id="pregunta6">
+				<h1>Pregunta 6 de 9</h1>
+				<br>
+				<h2>Un diagrama de flujo es:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta6" id="pregunta6-1" value="1">
+							<label for="pregunta6-1">Es un gráfico.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta6" id="pregunta6-2" value="2">
+							<label for="pregunta6-2">Es un dibujo para definir algo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta6" id="pregunta6-3" value="3">
+							<label for="pregunta6-3">La representación gráfica de un algoritmo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta6" id="pregunta6-4" value="4">
+							<label for="pregunta6-4">Todas son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig6" onclick="sig6()">Siguiente</button>
+				<button class="ant" id="ant6" onclick="ant6()">Anterior</button>
+			</div>
+			<div class="pregunta" id="pregunta7">
+				<h1>Pregunta 7 de 9</h1>
+				<br>
+				<h2>Cuando decimos que unas de sus características son ser preciso, definido y finito hace referencia a:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta7" id="pregunta7-1" value="1">
+							<label for="pregunta7-1">Un proceso.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta7" id="pregunta7-2" value="2">
+							<label for="pregunta7-2">Un resultado.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta7" id="pregunta7-3" value="3">
+							<label for="pregunta7-3">Un algoritmo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta7" id="pregunta7-4" value="4">
+							<label for="pregunta7-4">Solo la A y la C son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig7" onclick="sig7()">Siguiente</button>
+				<button class="ant" id="ant7" onclick="ant7()">Anterior</button>
+			</div>
+			<div class="pregunta" id="pregunta8">
+				<h1>Pregunta 8 de 9</h1>
+				<br>
+				<h2>Cuál es un pasos para resolver un problema:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta8" id="pregunta8-1" value="1">
+							<label for="pregunta8-1">Análisis del problema.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta8" id="pregunta8-2" value="2">
+							<label for="pregunta8-2">Verificación del algoritmo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta8" id="pregunta8-3" value="3">
+							<label for="pregunta8-3">Diseño del algoritmo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta8" id="pregunta8-4" value="4">
+							<label for="pregunta8-4">Todas son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig8" onclick="sig8()">Siguiente</button>
+				<button class="ant" id="ant8" onclick="ant8()">Anterior</button>
+			</div>
+			<div class="pregunta" id="pregunta9">
+				<h1>Pregunta 9 de 9</h1>
+				<br>
+				<h2>Unas de las principales caracteristicas de un algoritmo son:</h2>
+				<br>
+				<ol>
+					<form>
+						<li>
+							<input type="radio" name="pregunta9" id="pregunta9-1" value="1">
+							<label for="pregunta9-1">Definido, preciso y finito.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta9" id="pregunta9-2" value="2">
+							<label for="pregunta9-2">Efectivo, finito y de 1 o más salidas.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta9" id="pregunta9-3" value="3">
+							<label for="pregunta9-3">De 0 o más entradas, finito y efectivo.</label>
+						</li>
+						<li>
+							<input type="radio" name="pregunta9" id="pregunta9-4" value="4">
+							<label for="pregunta9-4">Todas son correctas.</label>
+						</li>
+					</form>
+				</ol>
+				<button class="sig" id="sig9" onclick="sig9()">Terminar</button>
+				<button class="ant" id="ant9" onclick="ant9()">Anterior</button>
+			</div>
+		</div>
+		<div id="resultados">
+			<h1>¡Terminaste!</h1>
+			<br>
+			<h3>A continuacion te dejaremos tus resultados:</h3>
+			<br>
+			<p><b>Puntuacion: </b><span id="puntaje">100</span></p>
+			<p id="aprobado"></p>
+			<br>
+			<table border="1">
+				<thead>
+					<tr>
+						<th width="200">Pregunta</th>
+						<th width="100">Correcta</th>
+						<th width="100">Marcada</th>
+						<th width="100">Resultado</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>Pregunta 1</td>
+					<td>2</td>
+					<td id="marcada1"></td>
+					<td id="resultado1"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 2</td>
+					<td>2</td>
+					<td id="marcada2"></td>
+					<td id="resultado2"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 3</td>
+					<td>3</td>
+					<td id="marcada3"></td>
+					<td id="resultado3"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 4</td>
+					<td>3</td>
+					<td id="marcada4"></td>
+					<td id="resultado4"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 5</td>
+					<td>1</td>
+					<td id="marcada5"></td>
+					<td id="resultado5"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 6</td>
+					<td>3</td>
+					<td id="marcada6"></td>
+					<td id="resultado6"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 7</td>
+					<td>3</td>
+					<td id="marcada7"></td>
+					<td id="resultado7"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 8</td>
+					<td>4</td>
+					<td id="marcada8"></td>
+					<td id="resultado8"></td>
+				</tr>
+				<tr>
+					<td>Pregunta 9</td>
+					<td>4</td>
+					<td id="marcada9"></td>
+					<td id="resultado9"></td>
+				</tr>
+			</table>
+			<button id="btnReload" onclick="location.reload()">Reiniciar</button>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
